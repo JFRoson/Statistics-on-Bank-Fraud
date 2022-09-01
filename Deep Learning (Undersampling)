@@ -1,0 +1,16 @@
+# PACKAGES
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from imblearn.under_sampling import RandomUnderSampler
+import tensorflow as tf
+from tensorflow.keras.layers import BatchNormalization
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Reshape, Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from numpy.random import seed
+
+# IMPORT DATA
+df=pd.read_csv('bs140513_032310.csv')
+df=df.drop(['zipMerchant', 'zipcodeOri'], axis=1)
+
