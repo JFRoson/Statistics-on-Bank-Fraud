@@ -1,7 +1,10 @@
+# PACKAGES
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
+from numpy import mean
 
+# IMPORT DATA
 df=pd.read_csv('bs140513_032310.csv')
 df=df.drop(['zipMerchant', 'zipcodeOri'], axis=1)
 
