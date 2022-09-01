@@ -33,7 +33,7 @@ for col in col_categorical:
 df[col_categorical] = df[col_categorical].apply(lambda x: x.cat.codes)
 
 # INDEPENDENT AND RESPONSE VARIABLE
-X=df.drop('fraud', axis=1) # Independent (We drop the fraud)
+X=df.drop('fraud', axis=1) # Independent (We drop the fraud column)
 y=df['fraud'] # Response (fraud column)
 
 # FUNCTION FOR PLOTTING ROC-AUC CURVE
